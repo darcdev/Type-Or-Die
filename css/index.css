@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+body {
+    font-family: 'Creepster', cursive;
+    background: rgba(0, 0, 0, 0.8);
+}
+.game1 {
+    height: 100%;
+    background: url("../img/type_or_die.png")no-repeat center center fixed;
+    max-width: 100%;
+    background-size: 100% 100%;
+}
+h1 {
+    font-size: 5em;
+}
+.game2 {
+    background: url("../img/image2.jpg")no-repeat center center fixed;
+    max-width: 100%;
+    background-size: 100% 100%;
+}
+.container-game {
+    display: none;
+    z-index: 0;
+}
+.play {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 850px;
+    width: 200px;
+}
+.title {
+    text-align: center;
+    z-index: 1;
+    font-size: 5em;
+    color: white;
+}
+.level {
+    text-align: center;
+    z-index: 1;
+    opacity: 0.8;
+    font-size: 3em;
+    color: white;
+}
+.choose {
+    text-align: center;
+}
+.level-button {
+    width: 150px;
+    font-size: 2em;
+    background: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.level-button:hover {
+    background: black;
+    color: white;
+    box-shadow: 5px 5px 50px 15px white;
+    border-radius: 5px;
+    animation: linear;
+}
+.level-button:focus {
+    outline-color: black;
+}
+.words {
+    text-align: center;
+    z-index: 1;
+    opacity: 0.7;
+    font-size: 2.8em;
+    position: relative;
+    top: 40px;
+    color: white;
+    box-shadow: 5px 5px 50px 15px white;
+}
+.input {
+    display: block;
+    z-index: 1;
+    margin: 210px auto;
+    width: 220px;
+    text-align: center;
+    outline: 2px solid white;
+    outline-offset: 10px;
+    position: relative;
+    top: -25px;
+}
+.input:focus {
+    outline-color: black;
+    box-shadow: 5px 5px 50px 15px white;
+    outline-offset: 1px;
+}
+.score {
+    text-align: center;
+    opacity: 0.8;
+    font-size: 3em;
+    color: white;
+}
+.scores {
+    text-align: center;
+}
+table {
+    background: white;
+    width: 250px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 30px 10px white;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+th {
+    font-size: 1.3em;
+}
+tr {
+    font-size: 1.4em;
+}
+tr:hover {
+    border: 2px solid white;
+    background: black;
+    color: white;
+}
+.time {
+    display: block;
+    border: 2px solid #000;
+    width: 250px;
+    height: 30px;
+    background: #3F4034;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    box-shadow: 4px 4px 30px 10px white;
+    animation-name: time;
+    text-align: center;
+}
+.start, .again {
+    position: relative;
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    top: -190px;
+    border: 1px solid black;
+}
+.start:hover {
+    border: 1px solid black;
+}
+.total {
+    background: white;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: -120px;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 4px 4px 30px 10px white;
+}
+.score_final {
+    border-left: 2px solid black;
+}
+.total_score, #loose {
+    color: red;
+    font-size: 2em;
+}
+@keyframes time {
+    0% {
+        background-color: green;
+    }
+    20% {
+        background-color: yellowgreen;
+    }
+    35% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: orange;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        width: 0%;
+    }
+}
+.life {
+    float: left;
+}

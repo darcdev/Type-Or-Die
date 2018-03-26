@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Typing or die</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body id="game" class="game1 game2" >
+<div class="container-fluid">
+	
+
+<div class="row container-game" id="container-game">
+<div class="col">
+<h1 class="title"  id="title" >TYPE OR DIE...</h1>
+
+<div class="row">
+<div class="col-4">
+<h2 class="score" id="score">BEST SCORES</h2>
+<div class="scores">
+
+<table border="1">
+
+ <thead>
+   <th>Position</th>
+   <th>Score</th>
+
+  </thead>
+
+  <tbody>
+  	<tr>
+  	
+     <td>1°</td>
+     <td id="score1" class="scorest"></td>
+    
+  	</tr>
+  	  	<tr>
+  	
+     <td>2°</td>
+     <td id="score2" class="scorest"></td>
+    
+  	</tr>
+
+  	  	<tr>
+  	
+     <td>3°</td>
+     <td id="score3" class="scorest"></td>
+    
+  	</tr>
+  	  	<tr>
+  	
+     <td>4°</td>
+     <td id="score4" class="scorest"></td>
+    
+  	</tr>
+  	  	<tr>
+  	
+     <td>5°</td>
+     <td id="score5" class="scorest"></td>
+    
+  	</tr>
+  </tbody>
+</table>
+   
+
+	
+</div>
+</div>
+
+ <div class="col-4  ">
+<h3 class="words" id="words">[words]</h3>
+
+<div class="time" id="time">
+	<span id="title_time"></span>
+ </div>
+
+<input type="text" class="input" name="" placeholder="Write Here..." id="input" autocomplete="off">
+
+<button class="btn btn-warning start" id="start">Start!</button>
+<button class="btn btn-warning again" id="again">Again!</button>
+
+
+</div>
+
+ <div class="col-4">
+<h2 class="level" id="level">LEVELS</h2>
+
+
+
+<div class="choose">
+	
+<button type="" class="level-button">Level 1</button><br>
+<button type="" class="level-button">Level 2</button><br>
+<button type="" class="level-button">Level 3</button><br>
+<button type="" class="level-button">Level 4</button><br>
+<button type="" class="level-button">Level 5</button><br>
+
+</div>
+</div>
+
+<div class="col-12 total">
+	
+	
+ <div >
+ 	
+   
+   <div class="row">
+   	
+     <div class="col-6 life">
+     	 
+         <h3>LIFES</h3>
+         
+         <img src="img/skull.png" class="skulls" id="life1" width="50" alt="">
+         <img src="img/skull.png" class="skulls" id="life2" width="50" alt="">
+         <img src="img/skull.png" class="skulls" id="life3" width="50" alt="">
+         <span id="loose"></span>
+
+
+     </div>
+
+         <div class="col-6 score_final">
+     	 
+         <h3>Score</h3>
+         
+         <span class="total_score" id="total_score">0</span>
+
+
+
+     </div>
+
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+</div>
+
+ 
+</div>
+</div>
+</div>
+</div>
+
+ <button class="btn btn-danger  play " id="play">PLAY!</button>
+
+<script src="js/index.js"></script>
+	
+</body>
+</html>
